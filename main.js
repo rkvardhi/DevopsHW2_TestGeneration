@@ -154,6 +154,7 @@ function generateTestCases()
 				{
 					var options = {};
 					options["normalize"] = true;
+					options["shouldNormalize"] = true;
 					params[p] = JSON.stringify(options);
 				}
 			}
