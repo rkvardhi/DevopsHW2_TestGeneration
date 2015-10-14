@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for DevopsHW2_TestGeneration\test.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../prettify.css">
+    <link rel="stylesheet" href="../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">DevopsHW2_TestGeneration\test.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(42 / 42)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(42 / 42)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">DevopsHW2_TestGeneration/</a> &#187; test.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var subject = require('./subject.js')
+var mock = require('mock-fs');
+subject.inc('',undefined);
+subject.inc('','');
+subject.inc(29,'');
+subject.inc(31,'');
+subject.inc('',undefined);
+subject.inc('','');
+subject.inc(29,'');
+subject.inc(31,'');
+subject.inc(31,'');
+subject.fileTest('path/fileExists','');
+subject.fileTest('','path/fileExists');
+subject.fileTest('','pathContent/file1');
+subject.fileTest('path/fileExists','');
+subject.fileTest('path/fileExists','path/fileExists');
+subject.fileTest('path/fileExists','pathContent/file1');
+mock({"path/fileExists":{},"pathContent":{"file1":"text content"}});
+	subject.fileTest('path/fileExists','pathContent/file1');
+mock.restore();
+mock({"path/fileExists":{"abc.txt":"some random text"},"pathContent":{"file1":"text content"}});
+	subject.fileTest('path/fileExists','pathContent/file1');
+mock.restore();
+mock({"path/fileExists":{}});
+	subject.fileTest('path/fileExists','pathContent/file1');
+mock.restore();
+mock({});
+	subject.fileTest('path/fileExists','pathContent/file1');
+mock.restore();
+mock({"path/fileExists":{"abc.txt":"some random text"},"pathContent":{"file1":""}});
+	subject.fileTest('path/fileExists','pathContent/file1');
+mock.restore();
+mock({"path/fileExists":{"abc.txt":"some random text"}});
+	subject.fileTest('path/fileExists','pathContent/file1');
+mock.restore();
+subject.normalize('');
+subject.format('','',{"normalize":true});
+subject.blackListNumber("919-123-1234");
+subject.blackListNumber('');
+subject.blackListNumber("919-123-1234");
+subject.blackListNumber('');
+subject.blackListNumber('');
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Oct 13 2015 20:00:36 GMT-0400 (Eastern Daylight Time)</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
